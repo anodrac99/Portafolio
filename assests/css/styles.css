@@ -8,6 +8,7 @@
 }
 
 html{
+    width: 100%;
     background-color: #242635;
 }
 nav{
@@ -442,19 +443,22 @@ input#menu-ham:checked ~ ul{
 }
 
 .portafolio{
+    width: 100%;
     display: flex;
     overflow-x: auto;
-    margin: 1rem;
+    margin: 0;
 }
 
 .portafolio div img{
     max-width: 200px;
     max-height: 200px;
+    
 }
 
 .portafolio div{
-    margin: 1rem;
+    margin: .5rem;
 }
+
 
 .contacto__h3{
     text-align: center;
@@ -482,6 +486,7 @@ input#menu-ham:checked ~ ul{
 }
 
 .tarjeta-email{
+    overflow: none;
     display: flex;
     justify-content: flex-end;
 }
@@ -522,6 +527,13 @@ input#menu-ham:checked ~ ul{
     height: 60px;
     color: #34B0BE;
     text-decoration: none;
+}
+
+.cv-boton:hover{
+    border-radius: 3px;
+    background-color: #34b0be;
+    color: #D1CECA;
+    border: 2px solid #34b0be;
 }
 
 footer{
@@ -788,16 +800,14 @@ footer{
     .tarjeta-contacto{
         display: flex;
         justify-content: center;
-        position: relative;
-        right: 250px;
+        margin-right: 450px;
     
     }
     
     .tarjeta-email{
         display: flex;
         justify-content: center;
-        position: relative;
-        left: 250px;
+        margin-left: 450px;
     }
     
     
